@@ -4,3 +4,10 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.fallback {
+  margin-top: 20px;
+  color: #CDCACD;
+  font-size: 40px;
+  text-align: center;
+}

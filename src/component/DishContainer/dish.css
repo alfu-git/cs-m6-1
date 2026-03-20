@@ -1,0 +1,112 @@
+.dish-card {
+  padding: 10px;
+  color: #CDCACD;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  min-width: 300px;
+}
+
+.dish-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dish-card h3 {
+  margin-bottom: 16px;
+  color: #FE4F03;
+  font-size: 24px;
+  cursor: default;
+}
+
+.dish-card .h3-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dish-card .title {
+  margin-bottom: 4px;
+  color: #bfff01;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dish-card .second-div {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish-card .instructions-container {
+  margin-bottom: 10px;
+}
+
+.dish-card .instructions-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  cursor: default;
+}
+
+.dish-card .ingredients-container {
+  margin-bottom: 10px;
+}
+
+.dish-card .ingredients-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  cursor: default;
+}
+
+.dish-card .resource-container {
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.dish-card .video-link, .source-link {
+  color: #FE4F03;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.dish-card .source-link {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-container>button {
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 3px 14px;
+  background-color: #FE4F03;
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-container>button:hover {
+  background-color: green;
+}
