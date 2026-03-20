@@ -1,0 +1,62 @@
+.nav-bg {
+  background-color: #0F0A0E;
+  border-bottom: 1px solid #1F0E16;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+h1 {
+  color: #FE4F03;
+  cursor: pointer;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-middle ul {
+  display: flex;
+  gap: 14px;
+}
+
+.nav-middle ul li a {
+  color: #CDCACD;
+}
+
+.nav-middle ul li a:hover {
+  color: #FE4F03;
+  cursor: pointer;
+}
+
+.nav-right p {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-right p a, span {
+  color: #CDCACD;
+}
+
+.nav-right p a:hover {
+  color: #FE4F03;
+}
+
+.nav-right p .sign-in {
+  color: #FE4F03;
+}
+
+.nav-img {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 640px) {
+  .nav-middle {
+    display: none;
+  }
+}
