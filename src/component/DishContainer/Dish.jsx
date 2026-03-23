@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import "./dish.css";
 
-const Dish = ({ dish }) => {
+const Dish = ({ dish, getDishData, isSelected }) => {
   // get ingredients and measure dynamically
   let ingredientsArr = [];
 
-  for (let i = 0; i < 20; i++) {
-    const ingredients = dish[`strIngredient${i}`];
-    const measure = dish[`strMeasure${i}`];
+  for (let i = 1; i <= 20; i++) {
+  const ingredients = dish[`strIngredient${i}`];
+  const measure = dish[`strMeasure${i}`];
 
-    if (ingredients && ingredients.trim() !== "") {
-      ingredientsArr.push(`${ingredients} - ${measure}`);
-    }
+  if (ingredients && ingredients.trim() !== "") {
+    ingredientsArr.push(
+      measure ? `${ingredients} - ${measure}` : ingredients
+    );
   }
+}
 
   // handle line clamp for h3, instructions, ingredients
   const [h3LineClamp, seth3LineClamp] = useState(true);
@@ -31,9 +33,13 @@ const Dish = ({ dish }) => {
     setIngredientsLineClamp(!ingredientsLineClamp);
   }
 
+  const handleBtn = () => {
+    getDishData(dish, !isSelected);
+  }
+
 
   return (
-    <div className="dish-card">
+    <div className={isSelected ? "dish-card dish-card-active" : "dish-card"}>
       <figure>
         <img src={dish.strMealThumb} alt={dish.strMeal} title={dish.strMeal} />
       </figure>
@@ -92,8 +98,13 @@ const Dish = ({ dish }) => {
       </div>
 
       <div className="btn-container">
-        <button>
-          Grab it
+        <button 
+          onClick={handleBtn}
+          className={isSelected ? "btn-active" : "btn-inactive"}
+          >
+          {
+            isSelected ? 'Grab Done' : 'Grab It'
+          }
         </button>
       </div>
     </div>

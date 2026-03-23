@@ -5,8 +5,12 @@
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   min-width: 300px;
+}
+
+.dish-card-active {
+  border: none;
+  box-shadow: 0 0 16px 0 green;
 }
 
 .dish-card img {
@@ -93,7 +97,7 @@
   justify-content: flex-end;
 }
 
-.btn-container>button {
+.btn-inactive {
   color: whitesmoke;
   font-weight: 500;
   font-size: 20px;
@@ -107,6 +111,16 @@
   cursor: pointer;
 }
 
-.btn-container>button:hover {
+.btn-active {
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 3px 14px;
   background-color: green;
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
 }

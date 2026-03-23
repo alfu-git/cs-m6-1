@@ -1,0 +1,33 @@
+.list-card {
+  color: #CDCACD;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.list-card h5 {
+  color: #FE4F03;
+  font-size: 18px;
+}
+
+.list-card span {
+  display: inline-block;
+  color: #bfff01;
+  font-size: 14px;
+}
+
+.list-img-container img {
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  background-color: black;
+  border-radius: 100%;
+}
